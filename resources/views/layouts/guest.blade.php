@@ -14,11 +14,17 @@
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
         <!-- Scripts -->
+        @livewireStyles
+
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+        <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
+        @livewireScripts
     </body>
 </html>

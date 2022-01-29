@@ -5,6 +5,7 @@ use App\Http\Livewire\AdminDashboard;
 use App\Http\Livewire\AdminProdectEdit;
 use App\Http\Livewire\AdminProduct;
 use App\Http\Livewire\AdminProductCreate;
+use App\Http\Livewire\HomeCategory;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('category/{category_name}', HomeCategory::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
