@@ -25,7 +25,8 @@
                         <div class="w-full flex flex-col mb-3">
                             <label class="font-semibold text-gray-600 py-2">Featured<abbr title="required">*</abbr></label>
                             <select wire:model='feautured' class="block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded-lg h-10 px-4 md:w-full " required="required" name="integration[city_id]" id="integration_city_id">
-                  <option value="1">Yes</option>
+                 <option value="">Seleted Featured</option>
+                 <option value="1">Yes</option>
                   <option value="0">No</option>
     </select>
     @error('feautured')  <p class="text-danger">{{$message}}</p> @enderror
