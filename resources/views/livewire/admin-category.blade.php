@@ -150,13 +150,13 @@
 
                             <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                 <button wire:click="editpage('{{  $categorys->id }}')" class="font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-md px-10 py-2 transition-colors">
-                                    <i wire:loading wire:target="editpage" class="fa fa-spinner fa-spin" style="font-size:20px"></i> &nbsp;   Edit
+                                     Edit
                                 </button>
                             </td>
 
                             <td>
                                 <button class="font-bold bg-red-600 hover:bg-red-700 text-white rounded-md px-10 py-2 transition-colors" wire:click="delete('{{ $categorys->id }}')">
-                                    <i wire:loading wire:target="delete" class="fa fa-spinner fa-spin" style="font-size:20px"></i>
+                                
                                   Delete  </button>
 
                             </td>
